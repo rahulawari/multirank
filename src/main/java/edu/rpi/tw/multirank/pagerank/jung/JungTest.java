@@ -99,7 +99,7 @@ public class JungTest {
             graph.addEdge(e2, v1, v3);
 
             // Undirected edges are not allowed.
-            //graph.addEdge(e3, v2, v3, EdgeType.UNDIRECTED);
+            //analysis.addEdge(e3, v2, v3, EdgeType.UNDIRECTED);
 
             // Repeat vertices are tolerated.
             graph.addVertex(v1);
@@ -108,7 +108,7 @@ public class JungTest {
             graph.addEdge(e2, v1, v3);
 
             // Redefining an edge with different end points is not tolerated.
-            //graph.addEdge(e2, v2, v3);
+            //analysis.addEdge(e2, v2, v3);
 
             // Would-be parallel edges are simply ignored.
             graph.addEdge(e3, v1, v3);
