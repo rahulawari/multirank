@@ -11,9 +11,16 @@ Possible "constuctive" relationships to use (note: not yet known whether all of 
   * user creates a type
   * user applies a type to a topic
   * user creates a property (attached to a type)
-  * user applies a "datatype" property
-  * user applies an "object" property
+  * user applies or updates a "datatype" property
+  * user applies or updates an "object" property
   * user adds a type to a domain
+  * user edits a topic
+  * user posts to a discussion on a topic
+  * user marks two topics for merge
+  * user starts a new thread
+  * user adds an article
+  * user votes...
+  * user flags a topic for...
 
 Possible "destructive" relationships to use:
   * user deletes a topic
