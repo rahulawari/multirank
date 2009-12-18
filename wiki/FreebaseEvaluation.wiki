@@ -6,6 +6,22 @@ Evaluation of the MultiRank technique using publicly available Freebase data dum
 
 == Relationships used ==
 
-Relationships used:
-  * one
-  * two
+Possible "constuctive" relationships to use (note: not yet known whether all of these exist):
+  * user creates a topic
+  * user creates a type
+  * user applies a type to a topic
+  * user creates a property (attached to a type)
+  * user applies a "datatype" property
+  * user applies an "object" property
+  * user adds a type to a domain
+
+Possible "destructive" relationships to use:
+  * user deletes a topic
+  * user deletes a type
+  * user un-applies a type to a topic
+  * user deletes a property
+  * user un-applies a "datatype" property
+  * user un-applies an "object" property
+  * user removes a type from a domain
+
+Note: there appear to be no special "schema" relationships (a schema is just the collection of properties attached to a type)
