@@ -7,8 +7,9 @@ Evaluation of the MultiRank technique using publicly available Freebase data dum
 == Relationships used ==
 
 Possible "constuctive" relationships to use (note: not yet known whether all of these exist):
+  * user creates a domain
   * user creates a topic
-  * user creates a type
+  * user creates a type (in a domain)
   * user applies a type to a topic
   * user creates a property (attached to a type)
   * user applies or updates a "datatype" property
