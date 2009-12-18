@@ -1,0 +1,11 @@
+#summary Freebase MultiRank evaluation
+
+== Introduction ==
+
+Evaluation of the MultiRank technique using publicly available Freebase data dumps.
+
+== Relationships used ==
+
+Relationships used:
+  * one
+  * two
