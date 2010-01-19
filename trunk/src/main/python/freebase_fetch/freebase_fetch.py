@@ -5,6 +5,10 @@ def sql(cmd, c):
     print cmd
     c.execute(cmd)
 
+def get_db():
+    db = MySQLdb.connect(host='localhost', user='root', passwd='', db='freebase_music')
+    return db
+
 def get_key(id, db):
     c = db.cursor()
     c.execute("SELECT `key` from `resources` WHERE `id` = %s", (id,))

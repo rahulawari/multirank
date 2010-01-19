@@ -4,10 +4,7 @@ import sys, traceback
 import MySQLdb
 
 try:
-    database = "freebase_music"
-    db = MySQLdb.connect(host='localhost', user='root')
-    c = db.cursor()
-    freebase_fetch.sql("USE " + database, c)
+    db = freebase_fetch.get_db()
 
     # Get all links whose master property's schema is a type in the "/music" domain
     # Warning: this retrieves only those links from resources to resources (that is, it does not retrieve links in
