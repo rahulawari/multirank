@@ -6,7 +6,7 @@ USE freebase_music;
 
 CREATE TABLE `resources` (
     `key` INT NOT NULL AUTO_INCREMENT,
-    `id` VARCHAR(511) NOT NULL,
+    `id` VARCHAR(255) NOT NULL,
     `creator` INT,        # may be null for now
     `timestamp` DATETIME, # may be null for now
     UNIQUE (`id`),
