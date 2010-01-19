@@ -4,10 +4,7 @@ import sys, traceback
 import MySQLdb
 
 try:
-    database = "freebase_music"
-    db = MySQLdb.connect(host='localhost', user='root')
-    c = db.cursor()
-    freebase_fetch.sql("USE " + database, c)
+    db = freebase_fetch.get_db()
 
     # Get all instances of all types in the "/music" domain
     r = freebase.mqlreaditer({"type": [{"type": "/type/type", "domain": "/music", "id": None}], "id": None, "creator": None, "timestamp": None})

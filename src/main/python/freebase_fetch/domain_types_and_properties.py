@@ -4,10 +4,7 @@ import sys, traceback
 import MySQLdb
  
 try:
-    database = "freebase_music"
-    db = MySQLdb.connect(host='localhost', user='root')
-    c = db.cursor()
-    freebase_fetch.sql("USE " + database, c)
+    db = freebase_fetch.get_db()
 
     # Get the "/music" domain resource
     r = freebase.mqlreaditer({"id": "/music", "creator": None, "timestamp": None})
