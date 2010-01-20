@@ -29,5 +29,8 @@ try:
             print str(chunks) + ") Committed " + str(chunksize) + " resource_type records."
 
     db.close()
+except BadStatusLine, e:
+    print "bad status line: " + e.line
+    print "    args: " + str(e.args)
 except:
     traceback.print_exc(file=sys.stderr)
