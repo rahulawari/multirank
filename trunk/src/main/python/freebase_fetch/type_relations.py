@@ -2,6 +2,7 @@ import freebase
 import freebase_fetch
 import sys, traceback
 import MySQLdb
+import httplib
 
 try:
     db = freebase_fetch.get_db()
@@ -29,7 +30,7 @@ try:
             print str(chunks) + ") Committed " + str(chunksize) + " resource_type records."
 
     db.close()
-except BadStatusLine, e:
+except httplib.BadStatusLine, e:
     print "bad status line: " + e.line
     print "    args: " + str(e.args)
 except:
