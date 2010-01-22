@@ -8,7 +8,10 @@ def sql(cmd, c):
 
 def get_db():
     # Move me
-    logging.basicConfig()
+    LOG_FILENAME = 'log.out'
+    logging.basicConfig(filename=LOG_FILENAME,level=logging.INFO)
+    logging.info("Initialized logging.")
+    
     db = MySQLdb.connect(host='localhost', user='root', passwd='', db='freebase_music')
     return db
 
