@@ -1,11 +1,14 @@
 import freebase
 import MySQLdb
+import logging
 
 def sql(cmd, c):
     print cmd
     c.execute(cmd)
 
 def get_db():
+    # Move me
+    logging.basicConfig()
     db = MySQLdb.connect(host='localhost', user='root', passwd='', db='freebase_music')
     return db
 
